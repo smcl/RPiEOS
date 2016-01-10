@@ -1,0 +1,20 @@
+.container-narrow {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;		     
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+@media screen and (max-device-width: 768px) { 
+    .container-narrow {
+	width: 100%;
+    }
+
+    .jumbotron {
+	background-color: #FFFFFF;
+    }
+}
+

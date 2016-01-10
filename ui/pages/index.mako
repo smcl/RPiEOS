@@ -1,18 +1,17 @@
 <div class="jumbotron">
-	<h1>
-		Index
-	</h2>
-	<p>
-		This is the main page of a very simple site.
-	</p>
-	<p>
-		Here are some widgets loaded from an sqlite3 DB:
-		<ul>
-			% for widget in model:
-				<li> 
-					<b> ${widget[1]} </b> = ${widget[2]}
-				</li>
-			% endfor
-		</ul>
-	</p>	
+  <p>
+    Taking a picture every <input id="seconds" name="seconds" type="text" value="${app.picThread.seconds}" size="5" disabled/> seconds
+  </p>
+
+  <p>
+    <a href="javascript:editClicked()" id="editButton" class="btn btn-default">edit</a>
+    <a href="javascript:cancelClicked()"id="cancelEditButton" class="btn btn-default" style="display:none">cancel</a>
+    <a href="javascript:saveClicked()" id="saveEditButton" class="btn btn-primary" style="display:none">save</a>
+    <a href="/snap" class="btn btn-success">take pic now</a>
+  </p>
+
+  <p>
+    Total pics taken: <strong> ${app.picThread.counter} </strong>
+  </p>
+
 </div>

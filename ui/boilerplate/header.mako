@@ -1,3 +1,7 @@
+<%!
+   import os.path
+%>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,13 +15,18 @@
     <script src="/static/jquery-1.11.3.min.js"></script>
     <script src="/static/bootstrap.min.js"></script>
 
+    %if os.path.isfile(os.path.join(app.current_dir, "static", page + ".js")):
+    <script src="/static/${page}.js"></script>
+    %endif
+
     <link rel="stylesheet" href="/static/bootstrap.min.css">
     <link rel="stylesheet" href="/static/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/static/site.css">    
 
     </head>
 
     <body>
-		<div class="container">
+		<div class="container container-narrow">
 
 	    <nav class="navbar navbar navbar-static-top">
 	      <a class="navbar-brand" href="/">${app.AppName}</a>

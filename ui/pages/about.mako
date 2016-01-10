@@ -1,15 +1,9 @@
 <div class="jumbotron">
-	<h1>
-		About
-	</h2>
-	<p>
-		This is the skeleton of a very simple webapp using:
-		<ul>
-			<li> python </li>
-			<li> cherrypy </li>
-			<li> bootstrap </li>
-			<li> jquery </li>
-			<li> sqlite3 </li>
-		</ul>
-	</p>
+  <h2>
+    About
+  </h2>
+
+  <p>
+    This is a little webapp to control a Canon EOS 450D camera using a Raspberry Pi connected to the internet. The primary use of this is as a simple interface to control take regular pictures which will later be assembled into little timelapse videos.
+  </p>
 </div>
