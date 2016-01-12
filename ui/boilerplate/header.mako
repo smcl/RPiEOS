@@ -26,7 +26,7 @@
     </head>
 
     <body>
-		<div class="container container-narrow">
+      <div class="container container-narrow">
 
 	    <nav class="navbar navbar navbar-static-top">
 	      <a class="navbar-brand" href="/">${app.AppName}</a>

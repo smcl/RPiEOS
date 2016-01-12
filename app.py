@@ -142,7 +142,7 @@ if __name__ == "__main__":
 		'request.error_response': blank_error_page,
 		'error_page.404': "./static/404",
 		"tools.proxy.on": True,
-		"tools.proxy.local": "X-Forwarded-Host",
+		"tools.proxy.local": "Host",
 		"tools.proxy.remote": "X-Forwarded-For",
 	})
 
